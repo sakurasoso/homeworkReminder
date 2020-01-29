@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+    width:  100%;
+    background-color: bisque;
+}
+
+div {
+    background-color: chartreuse;
+    height: 300px;
+    width: 300px;
+}
