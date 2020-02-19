@@ -11,7 +11,8 @@ function createWindow () {
     height: 720,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    title:"Homework Reminder V0.1.0",
   })
 
   // 加载index.html文件
