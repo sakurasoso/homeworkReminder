@@ -1,11 +1,145 @@
 html {
     height: 100%;
     width:  100%;
-    background-color: bisque;
 }
 
-div {
-    background-color: chartreuse;
-    height: 300px;
-    width: 300px;
+body{
+    margin: 0;
+    height: 100%;
+}
+
+
+
+.header_wrapper {
+    background-color:rgb(45, 121, 208);
+    color: aliceblue;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+#app_logo {
+    font-size: 38px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app_title{
+    font-size: 130%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.searchbox{
+    width: 500px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    float: right;
+    
+}
+
+#header_search_logo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: rgb(45, 121, 208);
+}
+
+#search_box_input{
+    float: left;
+    align-self: center;
+    width: calc(100% - 50px);
+    height: 25px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+}
+.main_under{
+    height: calc( 100% - 50px );
+    width: 100%;
+    display: inline-flex;
+}
+.under_main_menu{
+    height: 100%;
+    min-width: 80px;
+    width: 15%;
+    background-color:rgb(220, 220, 220);
+}
+.user_s_profile{
+    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+.user_info_setting{
+    display: flex;
+    height: 50px;
+}
+ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.menu_button_con{
+    margin: 0;
+    height: 50px;
+
+}
+.menu_button{
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(220, 220, 220);;
+
+}
+.menu_button:hover{
+    background-color: rgb(200, 200, 200);
+}
+.menu_button:active{
+    background-color: rgb(179, 179, 179);
+}
+
+.menu_button_icon{
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#canvas_logo{
+    width: 30px;
+    height: 30px; 
+}
+
+.menu_button_content{
+    font-size: 15px;
+}
+
+.todo_main{
+    width: 80%;
+}
+.todo_main_con{
+    width: 100%;
+    height: 100%;
 }

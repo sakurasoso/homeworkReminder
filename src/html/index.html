@@ -2,11 +2,65 @@
 <html>
     <header>
         <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
     </header>
     <body>
-        <h1>Hello World!</h1>
-        <div>
-            <h1>Test Div</h1>
+        <div class = "header_wrapper" role="main_header"> 
+            <span class = "logo_container" id="app_logo" role="logo_container">
+                <i class="far fa-calendar-alt"></i>      
+            </span>    
+            <div id="app_title" role = "title_display">Homework Reminder</div>
+            <div role="search" class="searchbox">
+                <div role="logo_container" class="logo_container" id="header_search_logo">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" aria-label="search" id="search_box_input">
+            </div>
         </div>
+
+        <div role="main" class="main_under">
+            <div role="menubar" class="under_main_menu">
+                <div role="figure" class = "user_s_profile">
+                    <div role="info_box" class="user_info_setting">
+                        <div><i class="fas fa-user-circle"></i></div>
+                        <div>USER NAME</div>
+                    </div>
+                </div>
+                <ol class="menu_buttons">
+                    <li class="menu_button_con">
+                        <button class="menu_button">
+                            <div class="menu_button_icon"><img src="../img/canvas_sized_0.svg" id="canvas_logo"></div>
+                            <div class="menu_button_content">
+                                CANVAS
+                            </div>
+                        </button>
+                    </li>
+                    <li class="menu_button_con">
+                        <button class="menu_button">
+                            <div class="menu_button_icon"><img src="../img/canvas_sized_0.svg" id="canvas_logo"></div>
+                            <div class="menu_button_content">
+                                CANVAS
+                            </div>
+                        </button>
+                    </li>
+                    <li class="menu_button_con">
+                        <button class="menu_button">
+                            <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
+                            <div class="menu_button_content">
+                                NEW
+                            </div>
+                        </button>
+                    </li>
+                </ol>
+            </div>
+            <div role="outside_con" class="todo_main">
+                <div role="listbox" class="todo_main_con">
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        
     </body>
 </html>
