@@ -138,9 +138,14 @@ const top_Menu_Data = [
       {
         label: 'Show Test Reminder',
         click: async() =>{
-          const {Notification} = require('electron');
+          const {Notification} = require('electron')
+          var d = new Date();
+          var h = addZero(d.getHours());
+          var m = addZero(d.getMinutes());
+          var s = addZero(d.getSeconds());
+          var text = h + ":" + m + ":" + s;
           const test_Noti  = new Notification({
-            title: 'test',
+            title: text,
           });
           test_Noti.show();
         }
@@ -148,6 +153,11 @@ const top_Menu_Data = [
     ]
   },
 ]
-
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
 const top_Menu = Menu.buildFromTemplate(top_Menu_Data)
 Menu.setApplicationMenu(top_Menu)
