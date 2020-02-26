@@ -12,6 +12,6 @@
 
 ## Get Start
 ```shellscript
-npm insatll
+npm install
 npm start
 ```
