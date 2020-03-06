@@ -7,8 +7,8 @@ let win
 
 function createWindow () {
   win = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 1300,
+    height: 800,
     webPreferences: {
       nodeIntegration: true
     },
@@ -17,7 +17,7 @@ function createWindow () {
 
   win.loadFile('./html/index.html')
 
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   win.on('closed', () => {
     win = null

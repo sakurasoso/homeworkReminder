@@ -1,92 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
-    </header>
-    <body>
-        <div class = "header_wrapper" role="main_header"> 
-            <span class = "logo_container" id="app_logo" role="logo_container">
-                <i class="far fa-calendar-alt"></i>      
-            </span>    
-            <div id="app_title" role = "title_display">Homework Reminder</div>
-            <div role="search" class="searchbox">
-                <div role="logo_container" class="logo_container" id="header_search_logo">
-                    <i class="fas fa-search"></i>
-                </div>
-                <input type="text" aria-label="search" id="search_box_input">
-            </div>
-        </div>
+<header>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</header>
 
-        <div role="main" class="main_under">
-            <div role="menubar" class="under_main_menu">
-                <div role="figure" class = "user_s_profile">
-                    <div role="info_box" class="user_info_setting">
-                        <div><i class="fas fa-user-circle"></i></div>
-                        <div>USER NAME</div>
-                    </div>
+<body>
+    <div class="header_wrapper" role="main_header">
+        <span class="logo_container" id="app_logo" role="logo_container">
+                <i class="far fa-calendar-alt"></i>      
+            </span>
+        <div id="app_title" role="title_display">Homework Reminder</div>
+        <div role="search" class="searchbox">
+            <div role="logo_container" class="logo_container" id="header_search_logo">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" aria-label="search" id="search_box_input">
+        </div>
+    </div>
+
+    <div role="main" class="main_under">
+        <div role="menubar" class="under_main_menu">
+            <div role="figure" class="user_s_profile">
+                <div role="info_box" class="user_info_setting">
+                    <div><i class="fas fa-user-circle"></i></div>
+                    <div>USER NAME</div>
                 </div>
-                <ol class="menu_buttons">
-                    <li class="menu_button_con">
-                        <button class="menu_button">
+            </div>
+            <ol class="menu_buttons">
+                <li class="menu_button_con">
+                    <button class="menu_button">
                             <div class="menu_button_icon"><img src="../img/canvas_sized_0.svg" id="canvas_logo"></div>
                             <div class="menu_button_content">
                                 CANVAS
                             </div>
                         </button>
-                    </li>
-                    <li class="menu_button_con">
-                        <button class="menu_button">
+                </li>
+                <li class="menu_button_con">
+                    <button class="menu_button">
                             <div class="menu_button_icon"><img src="../img/canvas_sized_0.svg" id="canvas_logo"></div>
                             <div class="menu_button_content">
                                 CANVAS
                             </div>
                         </button>
-                    </li>
-                    <li class="menu_button_con">
-                        <button class="menu_button">
+                </li>
+                <li class="menu_button_con">
+                    <button class="menu_button">
                             <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
                             <div class="menu_button_content">
                                 NEW
                             </div>
                         </button>
-                    </li>
-                </ol>
-            </div>
-            <div role="outside_con" class="todo_main">
-                <div role="listbox" class="todo_main_con">
-                    <div role="calendar_row" class="todo_main_row">
-                        <div class="todo_column">
-                            <div style="background-color: aqua; height: 100px;"></div>
-                            <div style="background-color: rgb(238, 255, 0); height: 300px;"></div>
-                            <div style="background-color: rgb(68, 0, 255); height: 200px;"></div>
-                            <div style="background-color: rgb(255, 0, 212); height: 400px;"></div>
-                        </div>
-                        <div class="todo_column">
-                            <div style="background-color: rgb(255, 174, 0); height: 200px;"></div>
-                            <div style="background-color: rgb(51, 255, 0); height: 100px;"></div>
-                            <div style="background-color: rgb(255, 60, 0); height: 200px;"></div>
-                            <div style="background-color: rgb(255, 0, 0); height: 400px;"></div> 
-                        </div>
-                        <div class="todo_column">
-                            <div style="background-color: aqua; height: 100px;"></div>
-                            <div style="background-color: rgb(238, 255, 0); height: 300px;"></div>
-                            <div style="background-color: rgb(68, 0, 255); height: 200px;"></div>
-                            <div style="background-color: rgb(255, 0, 212); height: 400px;"></div>
-                        </div>
-                        <div class="todo_column">
-                            <div style="background-color: rgb(255, 174, 0); height: 200px;"></div>
-                            <div style="background-color: rgb(51, 255, 0); height: 100px;"></div>
-                            <div style="background-color: rgb(255, 60, 0); height: 200px;"></div>
-                            <div style="background-color: rgb(255, 0, 0); height: 400px;"></div> 
-                        </div>
-
-                    </div>
+                </li>
+            </ol>
+        </div>
+        <div role="outside_con" class="todo_main">
+            <div role="listbox" class="todo_main_con" id="main_calendar">
+                <div role="calendar_col" class="todo_main_col" id="todo_main_col">
+                   <div class="reminder_con">Hello<br>Hello</div>
                 </div>
             </div>
-            
         </div>
-        
-        
-    </body>
+
+    </div>
+</body>
+<script src="../js/main.js"></script>
+
 </html>
