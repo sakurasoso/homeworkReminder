@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require('electron')
+const { app, BrowserWindow, Menu, BrowserView } = require('electron')
 
 // To Check System is MAC or not
 const isMac = process.platform === 'darwin'
@@ -7,8 +7,8 @@ let win
 
 function createWindow () {
   win = new BrowserWindow({
-    width: 1300,
-    height: 800,
+    width: 1400,
+    height: 850,
     webPreferences: {
       nodeIntegration: true
     },
@@ -41,6 +41,8 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+
 
 /////////// Init_Top_Menu //////////////////
 const top_Menu_Data = [
@@ -147,6 +149,16 @@ const top_Menu_Data = [
             title: text,
           });
           test_Noti.show();
+        },
+      },{
+        label: 'new window',
+        click: async() =>{
+          let popup = new BrowserWindow({height:400,width:600});
+          popup.on('closed', () => {
+            popup = null
+          });
+          popup.loadURL('https://github.com');
+
         }
       },
     ]
