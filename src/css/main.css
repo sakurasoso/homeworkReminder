@@ -149,5 +149,21 @@ ol {
     width: 100%;
     min-height: 90px;
     border: solid 3px #aaaaaa;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+}
+
+.check_mark_outside{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(83, 200, 108);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check_mark_inside svg{
+    fill: white;
 
 }
