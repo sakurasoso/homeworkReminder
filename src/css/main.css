@@ -13,6 +13,7 @@ body {
  }
 
 .whiteboard {
+    z-index: 100;
     background-color: rgb(75, 115, 138);
     height: 100%;
     width: 100%;
@@ -267,3 +268,9 @@ form p > * {
     padding: 0 28px;
 }
 /*   Login page end   */
+
+#add {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
