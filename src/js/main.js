@@ -1,5 +1,8 @@
 'use strict';
 
+var USERID = "";
+var TOKEN ="";
+
 function create_todo_columns(colnum) {
     var todo_row = document.getElementById("todo_main_row");
     var col = 0;
@@ -19,6 +22,12 @@ function create_a_reminder(title, time) {
     return post;
 }
 //login
+function changeUerUI(){
+    var userUI = document.getElementById("userui");
+    userUI.textContent = "Hi, "+USERID +"!";
+}
+
+
 function closelogin(){
     var loginpage = document.getElementById("loginpage");
 
@@ -40,8 +49,10 @@ function login() {
         alert("please input password");
  
     } else if(username.value == "admin" && pass.value == "123456"){
-        
+        USERID= username.value;
+        TOKEN = Accesstoken.value;
         closelogin();
+        changeUerUI();
  
     } else {
  
@@ -52,3 +63,5 @@ function login() {
 
 var loginbotton = document.getElementById("btn_login");
 loginbotton.addEventListener("click", function(){login();});
+
+
