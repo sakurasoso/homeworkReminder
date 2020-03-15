@@ -6,7 +6,24 @@
 </header>
 
 <body>
-    <div> </div>
+    <div id="loginpage" class="whiteboard">
+        <div id="login_frame">
+ 
+            <p id="image_logo"><img src=""></p>
+         
+            <form method="post" action="login.js">
+         
+                <p><label class="label_input">USERNAME</label><input type="text" id="username" class="text_field" value="admin"/></p>
+                <p><label class="label_input">PASSWORD</label><input type="text" id="password" class="text_field" value="123456"/></p>
+                <p><label class="label_input">TOKEN</label><input type="text" id="token" class="text_field" value="1002~LfAMg3eyuMUPqkD0ftc7sM06QF51CNOfLA1UWAzEk67emGGRc4QwfZ0JVHv0T2Eb"/></p>
+                <div id="login_control">
+                    <input type="button" id="btn_login" value="Login To Accont"/>
+                    <a id="forget_pwd" target="_blank" href="https://oregonstate.instructure.com/profile/settings">Get a new access token HERE.</a>
+                   <!-- <a id="forget_pwd" href="#">Forgot Password？</a>-->
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="header_wrapper" role="main_header">
         <span class="logo_container" id="app_logo" role="logo_container">
                 <i class="far fa-calendar-alt"></i>      
@@ -74,5 +91,5 @@
     </div>
 </body>
 <script src="../js/main.js"></script>
-
+<script>window.$ = window.jQuery = require('jquery');</script>
 </html>
