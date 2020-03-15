@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="../css/newevent.css">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+</header>
+
+<body>
+    <div id="neweventpage">
+        <div id="navi">
+            <span onclick="showDiv('div0');">Assignment</span>
+            <span onclick="showDiv('div1');">Course</span>
+            <span onclick="showDiv('div2');">Event3</span>
+            <span onclick="showDiv('div3');">Event4</span>
+        </div>
+        <div id="info">
+            <div id="div0"><form action="../html/index.html">
+                <label for="courseid">Course ID:</label><br>
+                <input type="text" id="courseid" name="courseid" value="CS361"><br>
+                <label for="title">Assignment Title:</label><br>
+                <input type="text" id="title" name="title" value="Joural A"><br>
+                <label for="due">Due date:</label><br>
+                <input type="date" id="due" name="due"><br>
+                <br>
+                <input type="submit" value="Submit"><br>
+              </form> 
+            </div>
+            <div id="div1" class="hidden">
+                <div id="div0"><form action="../html/index.html">
+                    <label for="courseid">Course ID:</label><br>
+                    <input type="text" id="courseid" name="courseid" value="CS361"><br>
+                    <label for="loc">location:</label><br>
+                    <input type="text" id="loc" name="loc" value="LINC 400"><br>
+                    <label for="weeks">Date:</label><br>
+                    <input type="text" id="weeks" name="weeks" value="T;Th"><br>
+                    <label for="stime">Time:</label><br>
+                    <input type="time" id="stime" name="stime"><br>
+                    <br>
+                    <input type="submit" value="Submit"><br>
+                  </form> 
+                </div>
+            </div>
+            <div id="div2" class="hidden">Event3</div>
+            <div id="div3" class="hidden">Event4</div>
+        </div>
+        <div id="buttonbox">
+            <span><button onclick="window.location='../html/index.html';">Cancel</button></span>
+        </div>
+    </div>
+    
+</body>
+<script src="../js/newevent.js"></script>
+<script>window.$ = window.jQuery = require('jquery');</script>
+</html>

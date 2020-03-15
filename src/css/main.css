@@ -8,6 +8,18 @@ body {
     height: 100%;
 }
 
+.hidden{
+	display:none !important;
+ }
+
+.whiteboard {
+    z-index: 100;
+    background-color: rgb(75, 115, 138);
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
 .header_wrapper {
     background-color: rgb(45, 121, 208);
     color: aliceblue;
