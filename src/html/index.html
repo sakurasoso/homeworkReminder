@@ -6,6 +6,34 @@
 </header>
 
 <body>
+    <div class="box" id = "login_box">
+  
+        <h2>Login</h2>
+        
+        <form action="">
+          
+          <!-- Login -->
+          
+          <div class="login-form">
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            
+          </div>
+
+          
+          <!-- Submit -->
+          
+          <input type="button" id="submit" value="Login">
+          
+          <!-- Help -->
+          <a href="#" class="forgot-password" title="Forgot password?">TIP</a>
+          
+        </form>
+      </div>
     <div class="header_wrapper" role="main_header">
         <span class="logo_container" id="app_logo" role="logo_container">
                 <i class="far fa-calendar-alt"></i>      
@@ -22,9 +50,9 @@
     <div role="main" class="main_under">
         <div role="menubar" class="under_main_menu">
             <div role="figure" class="user_s_profile">
-                <div role="info_box" class="user_info_setting">
+                <div role="info_box" class="user_info_setting" id="user_info_setting">
                     <div><i class="fas fa-user-circle"></i></div>
-                    <div>USER NAME</div>
+                    <div id ="info_user_id" >Login</div>
                 </div>
             </div>
             <ol class="menu_buttons">
@@ -55,23 +83,12 @@
             </ol>
         </div>
         <div class="todo_con_outside">
-            <div class="todo_con_inside">
-                <div class = "reminder_con">
-                    <div class="reminder_check_mark_con"> 
-                        <div class="check_mark_outside">
-                            <div class="check_mark_inside">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reminder_detail_con"></div>
+            <div class="todo_con_inside" id = "todo_con_inside">
 
-                </div>
             </div>
         </div>
 
     </div>
 </body>
-<script src="../js/main.js"></script>
-
+<script src="../js/index.js"></script>
 </html>

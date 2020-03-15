@@ -159,6 +159,15 @@ const top_Menu_Data = [
 
         }
       },
+      {
+        label: 'new window',
+        click: async() =>{
+          let view = new BrowserView()
+          win.setBrowserView(view)
+          view.setBounds({ x: 400, y: 400, width: 300, height: 300 })
+
+        }
+      }
     ]
   },
 ]

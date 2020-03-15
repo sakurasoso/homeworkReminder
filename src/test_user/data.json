@@ -1,0 +1,53 @@
+[{
+    "name":"test",
+    "type":"user",
+    "ID":"01",
+    "password":"12345",
+    "CANVAS_AUTH":"",
+    "GOOGLE_AUTH":"",
+    "calendar":[
+        {
+            "date":"2020-03-05",
+            "events":[
+            {
+                "title":"SOFTWARE_ENGINEERING_I",
+                "type":"lesson",
+                "courseid":"CS361_001_W20",
+                "courseType":"lecture",
+                "starttime":"1600",
+                "endtime":"1750",
+                "location":"LINC"
+
+            },
+            {
+                "title":"COSTUMER_MEETING_SOFTWARE_ENGINEERING_I",
+                "type":"meeting",
+                "courseid":"CS361_001_W20",
+                "courseType":"lecture",
+                "starttime":"1600",
+                "endtime":"",
+                "location":"LINC",
+                "members":{
+                    "1":"ME",
+                    "2":"customer"
+                }
+
+
+            }
+        ]},
+        {
+            "date":"2020-03-07",
+            "events":[
+            {
+                "title":"SOFTWARE_ENGINEERING_I",
+                "type":"lesson",
+                "courseid":"CS361_001_W20",
+                "courseType":"lecture",
+                "starttime":"1600",
+                "endtime":"1750",
+                "location":"LINC"
+            }
+        ]}
+    ]
+}
+]
