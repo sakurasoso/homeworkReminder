@@ -93,11 +93,13 @@ function ini_post(data){
     }
     if(data["members"]){
         var i = 0;
-        lower_data += "  Members: ";
+        lower_data += "  Members:{ ";
         for(i = 0;i < data.members.length; i++){
             var temp = "\"" + i.toString() + "\"";
-            lower_data += (i.toString() + ": " + data.members[temp]);
+            console.log(data["members"]);
+            lower_data += ((i+1).toString() + ": " + data.members[i].name + "  ");
         }
+        lower_data += " }";
     }
     console.log(upper_data);
     console.log(lower_data);
@@ -111,6 +113,9 @@ login.onclick = function initialize(){
         login_invisible();
         ini_posts(all_data);
     }
+    else{
+        alert("username: test \npassword: 12345");
+    }
 }
 function ini_posts(data){
     var i = 0;
@@ -118,6 +123,9 @@ function ini_posts(data){
     console.log((0 < data[0].calendar.length))
     for(i = 0; i < data[0].calendar.length;i++){
         console.log(data[0].calendar[i].length);
+        var date = document.createElement("div");
+        date.innerHTML = data[0].calendar[i].date;
+        cal_con.appendChild(date);
         for(j = 0; j < data[0].calendar[i].events.length;j++){
                 ini_post(all_data[0]["calendar"][i]["events"][j]);
         }
@@ -125,3 +133,4 @@ function ini_posts(data){
     var name = document.getElementById("info_user_id");
     name.innerHTML = data[0].name;
 }
+

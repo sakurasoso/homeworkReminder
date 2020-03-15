@@ -27,10 +27,10 @@
                 "starttime":"1600",
                 "endtime":"",
                 "location":"LINC",
-                "members":{
-                    "1":"ME",
-                    "2":"customer"
-                }
+                "members":[
+                    {"name":"ME"},
+                    {"name":"customer"}
+                ]
 
 
             }
