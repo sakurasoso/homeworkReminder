@@ -134,3 +134,29 @@ function ini_posts(data){
     name.innerHTML = data[0].name;
 }
 
+function addZero(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+
+
+var noti_button = document.getElementById("noti_test");
+noti_button.onclick = function(){
+const {Notification} = require('electron').remote;
+var d = new Date();
+var h = addZero(d.getHours());
+var m = addZero(d.getMinutes());
+var s = addZero(d.getSeconds());
+var text = h + ":" + m + ":" + s;
+const test_Noti  = new Notification({
+    title: text,
+});
+test_Noti.show();
+}
+
+var login_tip = document.getElementById("login_tip");
+login_tip.onclick = function(){
+    alert("username: test \npassword: 12345");
+}

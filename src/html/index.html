@@ -2,11 +2,51 @@
 <html>
 <header>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/newevent.css">
     <link href="../node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
 </header>
 
 <body>
-    <div class="box" id = "login_box">
+    <div id="neweventpage">
+        <div id="navi">
+            <button onclick="showDiv('div0');">Assignment</button>
+            <button onclick="showDiv('div1');">Course</button>
+            <button onclick="showDiv('div2');">Event3</button>
+            <button onclick="showDiv('div3');">Event4</button>
+        </div>
+
+        <div id="info">
+            <div class="new_event_divs" id="div0" style="visibility:visible ;",><form action="../html/index.html">
+                <label for="courseid">Course ID:</label><br>
+                <input type="text" id="courseid" name="courseid" value="CS361"><br>
+                <label for="title">Assignment Title:</label><br>
+                <input type="text" id="title" name="title" value="Joural A"><br>
+                <label for="due">Due date:</label><br>
+                <input type="date" id="due" name="due"><br>
+                <br>
+                <input type="submit" value="Submit"><br>
+              </form> 
+            </div>
+            <div class="new_event_divs" id="div1" style="visibility: hidden;">
+                <form action="../html/index.html">
+                    <label for="courseid">Course ID:</label><br>
+                    <input type="text" id="courseid" name="courseid" value="CS361"><br>
+                    <label for="loc">location:</label><br>
+                    <input type="text" id="loc" name="loc" value="LINC 400"><br>
+                    <label for="weeks">Date:</label><br>
+                    <input type="text" id="weeks" name="weeks" value="T;Th"><br>
+                    <label for="stime">Time:</label><br>
+                    <input type="time" id="stime" name="stime"><br>
+                    <br>
+                    <input type="submit" value="Submit"><br>
+                  </form> 
+            </div>
+            <div class="new_event_divs" id="div2" style="visibility: hidden;">Event3</div>
+            <div class="new_event_divs" id="div3" style="visibility: hidden;">Event4</div>
+        </div>
+    </div>
+
+    <div class="box" id = "login_box" style="visibility: hidden;">
   
         <h2>Login</h2>
         
@@ -30,7 +70,7 @@
           <input type="button" id="submit" value="Login">
           
           <!-- Help -->
-          <a href="#" class="forgot-password" title="Forgot password?">TIP</a>
+          <div class="forgot-password"  id="login_tip">TIP</div>
           
         </form>
       </div>
@@ -73,6 +113,22 @@
                         </button>
                 </li>
                 <li class="menu_button_con">
+                    <button class="menu_button" id = "noti_test">
+                            <div class="menu_button_icon"><img src="../img/canvas_sized_0.svg" id="canvas_logo"></div>
+                            <div class="menu_button_content">
+                                SYSTEM NOTIFICATION TEST
+                            </div>
+                        </button>
+                </li>
+                <li class="menu_button_con">
+                    <button class="menu_button">
+                            <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
+                            <div class="menu_button_content">
+                                Change LANGUAGE
+                            </div>
+                        </button>
+                </li>
+                <li class="menu_button_con">
                     <button class="menu_button">
                             <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
                             <div class="menu_button_content">
@@ -92,4 +148,5 @@
 
 </body>
 <script src="../js/index.js"></script>
+<script src="../js/newevent.js"></script>
 </html>
