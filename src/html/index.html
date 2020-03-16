@@ -7,16 +7,17 @@
 </header>
 
 <body>
-    <div id="neweventpage">
+    <div id="neweventpage" style="visibility: hidden;">
         <div id="navi">
-            <button onclick="showDiv('div0');">Assignment</button>
-            <button onclick="showDiv('div1');">Course</button>
+            <button onclick="showDiv('div0');">Course</button>
+            <button onclick="showDiv('div1');">Meeting</button>
             <button onclick="showDiv('div2');">Event3</button>
             <button onclick="showDiv('div3');">Event4</button>
+            <button onclick="closeCreate();" >cancle</button>
         </div>
 
         <div id="info">
-            <div class="new_event_divs" id="div0" style="visibility:visible ;",><form action="../html/index.html">
+            <div class="new_event_divs" id="div1" style="visibility:hidden ;">
                 <label for="courseid">Course ID:</label><br>
                 <input type="text" id="courseid" name="courseid" value="CS361"><br>
                 <label for="title">Assignment Title:</label><br>
@@ -24,29 +25,32 @@
                 <label for="due">Due date:</label><br>
                 <input type="date" id="due" name="due"><br>
                 <br>
-                <input type="submit" value="Submit"><br>
-              </form> 
+                <button onclick="createMeeting();">submit</button><br>
             </div>
-            <div class="new_event_divs" id="div1" style="visibility: hidden;">
-                <form action="../html/index.html">
-                    <label for="courseid">Course ID:</label><br>
-                    <input type="text" id="courseid" name="courseid" value="CS361"><br>
-                    <label for="loc">location:</label><br>
-                    <input type="text" id="loc" name="loc" value="LINC 400"><br>
-                    <label for="weeks">Date:</label><br>
-                    <input type="text" id="weeks" name="weeks" value="T;Th"><br>
-                    <label for="stime">Time:</label><br>
-                    <input type="time" id="stime" name="stime"><br>
+            <div class="new_event_divs" id="div0" style="visibility: hidden;">
+                    <label for="courseCourseid">Course ID:</label><br>
+                    <input type="text" id="courseCourseid" name="courseid" value="CS361"><br>
+                    <label for="courseCourseTitle">CourseTilte:</label><br>
+                    <input type="text" id="courseCourseTitle" name="courseid" value="SOFTWARE_ENGINEERING_I"><br>
+                    <label for="courseCoursetype">Course TYPE:</label><br>
+                    <input type="text" id="courseCoursetype" name="coursetype" value="Lecture"><br>
+                    <label for="courseLoc">location:</label><br>
+                    <input type="text" id="courseLoc" name="loc" value="LINC 400"><br>
+                    <label for="courseDay">Date:</label><br>
+                    <input type="date" id="courseDay" name="due" value="2020-03-20"><br>
+                    <label for="courseStime">Time:</label><br>
+                    <input type="time" id="courseStime" name="stime" value="16:00"><br>
+                    <label for="courseEtime">Time:</label><br>
+                    <input type="time" id="courseEtime" name="etime" value="17:50"><br>
                     <br>
-                    <input type="submit" value="Submit"><br>
-                  </form> 
+                    <button onclick="createCourse();">submit</button><br> 
             </div>
             <div class="new_event_divs" id="div2" style="visibility: hidden;">Event3</div>
             <div class="new_event_divs" id="div3" style="visibility: hidden;">Event4</div>
         </div>
     </div>
 
-    <div class="box" id = "login_box" style="visibility: hidden;">
+    <div class="box" id = "login_box" >
   
         <h2>Login</h2>
         
@@ -121,7 +125,7 @@
                         </button>
                 </li>
                 <li class="menu_button_con">
-                    <button class="menu_button">
+                    <button class="menu_button" onclick="changeLANG();" id="changeLangButton">
                             <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
                             <div class="menu_button_content">
                                 Change LANGUAGE
@@ -129,7 +133,7 @@
                         </button>
                 </li>
                 <li class="menu_button_con">
-                    <button class="menu_button">
+                    <button class="menu_button" onclick="show_create()">
                             <div class="menu_button_icon"><i class="far fa-plus-square"></i></div>
                             <div class="menu_button_content">
                                 NEW

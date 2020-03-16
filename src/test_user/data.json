@@ -14,8 +14,8 @@
                 "type":"lesson",
                 "courseid":"CS361_001_W20",
                 "courseType":"lecture",
-                "starttime":"1600",
-                "endtime":"1750",
+                "starttime":"16:00",
+                "endtime":"17:50",
                 "location":"LINC"
 
             },
@@ -24,7 +24,7 @@
                 "type":"meeting",
                 "courseid":"CS361_001_W20",
                 "courseType":"lecture",
-                "starttime":"1600",
+                "starttime":"16:00",
                 "endtime":"",
                 "location":"LINC",
                 "members":[
@@ -43,8 +43,8 @@
                 "type":"lesson",
                 "courseid":"CS361_001_W20",
                 "courseType":"lecture",
-                "starttime":"1600",
-                "endtime":"1750",
+                "starttime":"16:00",
+                "endtime":"17:50",
                 "location":"LINC"
             }
         ]}

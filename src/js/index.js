@@ -160,3 +160,44 @@ var login_tip = document.getElementById("login_tip");
 login_tip.onclick = function(){
     alert("username: test \npassword: 12345");
 }
+function createMeeting(){
+    console.log("Nothing!!!");
+}
+function createCourse(){
+    var courseid = document.getElementById("courseCourseid");
+    var coursetype = document.getElementById("courseCoursetype");
+    var courseCourseTitle = document.getElementById("courseCourseTitle");
+    var courseLoc = document.getElementById("courseLoc");
+    var courseDay = document.getElementById("courseDay");
+    var courseStime = document.getElementById("courseStime");
+    var courseEtime = document.getElementById("courseEtime");
+
+    var OBJ = {
+        "title":courseCourseTitle.value,
+        "type":"lesson",
+        "courseid":courseid.value,
+        "courseType":coursetype.value,
+        "starttime":courseStime.value,
+        "endtime":courseEtime.value,
+        "location":courseLoc.value
+    };
+    var date = document.createElement("div");
+    date.innerHTML = courseDay.value;
+    cal_con.appendChild(date);
+    ini_post(OBJ);
+    var new_event_window = document.getElementById("neweventpage");
+
+    new_event_window.style.visibility = "hidden";
+    var divs = []; 
+    for(var i = 0;i < 4;i++) {
+        divs[i] = document.getElementById("div" + i);
+        divs[i].style.visibility = "hidden";
+    }
+
+}
+function changeLANG(){
+    var title = document.getElementById("app_title");
+    title.innerText = "\u4f5c\u4e1a\u63d0\u9192";
+    console.log("done");
+    alert("still not completed");
+};
