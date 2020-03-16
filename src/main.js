@@ -12,6 +12,8 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: true
     },
+    resizable:false,
+    maximizable:false,
     title:"Homework Reminder V0.1.0",
   })
 
