@@ -1,0 +1,5 @@
+
+electron-packager ./src --platform=darwin OSU_TO_DO --overwrite
+electron-installer-dmg ./OSU_TO_DO-darwin-x64/OSU_TO_DO.app OSU_TO_DO --icon=./electron.icns --overwrite
+
+electron-packager ./src --platform=win32 OSU_TO_DO --overwrite
