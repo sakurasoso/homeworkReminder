@@ -9,7 +9,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "electron": "^7.1.10"
+    "electron": "^9.4.0"
   },
   "dependencies": {
     "@babel/standalone": "^7.8.6",
